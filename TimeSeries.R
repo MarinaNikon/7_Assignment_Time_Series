@@ -24,7 +24,8 @@ library(forecast)
 # 1. Import ‘USA Firm Sales’ data in R
 
 # Load the data
-salesData<-read.csv(file.choose(), header = TRUE)
+salesData<-read.csv("USA_FIRM_SALES_DATA.csv", header = TRUE)
+
 head(salesData) # View first 6 rows
 dim(salesData) # Check the dimension of the dataset
 summary(salesData) #Summarizing data and checking for missing values
