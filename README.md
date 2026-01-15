@@ -6,10 +6,10 @@ Sales data from three business units (BU1, BU2, BU3) are examined to identify tr
 
 ## Business Context
 The dataset contains monthly sales figures (in million USD) for three business units from **February 2015 to January 2018**.  
-Accurate sales forecasting helps the firm improve demand planning, inventory management, and strategic decision-making.
+The analysis helps understand sales patterns and supports short-term forecasting, improve demand planning, inventory management, and strategic decision-making.
 
 ## Objectives
-1. Import and explore monthly sales data  
+1. Analyze monthly sales trends for three business units   
 2. Convert sales data into time series objects  
 3. Check stationarity using graphical and statistical methods  
 4. Identify the best ARIMA model for each business unit  
@@ -48,15 +48,15 @@ Each business unit contains **35 monthly observations**.
 - Forecasting using the `forecast` package  
 
 ## Key Findings
-- All three business units exhibit non-stationary behavior in original series  
+- All three business units show non-stationary behavior in original series  
 - BU1 and BU2 achieve stationarity after first-order differencing  
 - BU3 requires second-order differencing  
 - ARIMA models provide reliable short-term forecasts  
-- BU3 shows the lowest forecast error variance, indicating stable sales behavior  
+- BU3 shows the lowest forecast error variance, indicating stable and predictable sales behavior  
 
 ## Visualization
-Time series plots and forecast visualizations are generated within the analysis.  
-Selected outputs can be saved in the `results/` directory.
+![Sales Time Series](results/time_series_plot.png)
+![Sales Forecast](results/time_series_forecast.png)
 
 ## Tools and Skills
 - R
@@ -69,7 +69,8 @@ Selected outputs can be saved in the `results/` directory.
 1. Clone the repository  
 2. Open the R script  
 3. Ensure required packages are installed  
-4. Run the script sequentially  
+4. The dataset (`USA_FIRM_SALES_DATA.csv`) is already included in the repository  
+5. Run the script sequentially  
 
 ## Notes
 This project was completed for educational purposes and demonstrates practical time series forecasting techniques applied to real-world business data.
